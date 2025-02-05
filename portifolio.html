@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            padding: 15px;
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+
+        .logo img {
+            width: 400px;
+            height: auto;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 20px 0;
+        }
+
+        .menu {
+            display: flex;
+            gap: 60px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #00C896;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1339px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .intro {
+            background-color: #202020;
+            padding: 30px;
+            border-radius: 20px;
+            font-size: 18px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .projects {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-card {
+            background-color: #202020;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+            width: 30%;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-info a {
+            color: #00C896;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #ffffff;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .logo img {
+                width: 80%;
+            }
+
+            .menu {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .project-card {
+                width: 80%;
+            }
+
+            .intro {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="diegoalves.jpg" alt="Logo">
+        </div>
+    </header>
+    
+    <nav>
+        <div class="menu">
+            <a href="#sobre">SOBRE</a>
+            <a href="#projetos">PROJETOS</a>
+            <a href="#contato">CONTATO</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section class="intro" id="sobre">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+            <p> Hello!Helloooo! Sou Diego Alves, participo do segundo ano do Senai e Curso TI. Tenho conhecimento em Banco de dados, Python, Html e Css, além de estar aprendendo nesse exato momento Php e desenvolvimento mobile.
+                Em minha mera opnião não gosto disso, mas se caso forre meu bolso podemos pensar...
+            Sou uma pessoa que converso e faço amizades, além de bem família e gostar de conhecer pessoas novas,
+        porém não me queira como inimigo... sou bem perigoso, já vi todas temporadas de kobra kai e joguei todos mortal kombat e...EU JÁ ZEREI TODOS OS JOGOS, TODOS Street Figthers!!!</p>
+        </section>
+        
+        <section id="projetos">
+            <h2>Informações</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Local</h3>
+                    <p>Fiz dois anos de curso TI no Senai itu.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projetos</h3>
+                    <p>Fiz projetos sobre Descarbonização no primeiro ano.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Habilidades</h3>
+                    <p>Conhecimento em Python, HTML, CSS e Banco de Dados.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Experiência</h3>
+                    <p>Participei de projetos de desenvolvimento web.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Certificações</h3>
+                    <p>Possuo certificados em cursos de diversas áreas e TI(quase).</p>
+                </div>
+                <div class="project-card">
+                    <h3>Interesses</h3>
+                    <p>Desenvolvimento de jogos e aplicações mobile.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Soft Skills</h3>
+                    <p>Comunicação, trabalho em equipe e improviso.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Objetivos</h3>
+                    <p>Me tornar algo bem LONGE de programação.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Educação</h3>
+                    <p>Segundo ano do curso de TI no Senai e terceiro ano no Sesi.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Idiomas</h3>
+                    <p>Português nativo e inglês intermediário.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="contato" class="contact-info">
+        <h3>Contato</h3>
+        <p>Telefone: <a href="tel:+5511991496037">(11) 99149-6037</a></p>
+        <p>Email: Diegoalvesspfc2@gmail.com</p>
+    </div>
+    
+    <footer>
+        &copy; 2025 Todos os direitos reservados.
+    </footer>
+</body>
+</html>
